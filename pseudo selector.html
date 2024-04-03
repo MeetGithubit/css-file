@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selector and designing</title>
+    <style>
+
+        .containers{
+            border:2px solid red;
+            background-color:rgb(131, 224, 139);
+            padding: 34px;
+            margin: 34px auto;
+            width:666px;
+
+
+        }
+        .btn{
+            background-color: rgb(161, 80, 80);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: bold;
+            border: none;
+            padding: 6px;
+            cursor:pointer;
+            font-size: 15px;
+            border-radius: 4px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            background-color: rgb(85, 212, 96);
+            color:rgb(153, 50, 50)
+        }
+         /*a:visited{
+           background-color: rgb(126, 229, 236)
+         }*/
+
+         a:active{
+            background-color: rgb(235, 89, 145);
+         }
+
+         .btn:hover{
+            background-color: rgb(190, 190, 55);
+           color:aquamarine;
+           /* border:3px solid black;*/
+         }
+        
+
+    </style>
+    
+</head>
+
+<body>
+    <div class="containers" id= "cont1">
+        <h3>this is my heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae inventore magni accusantium molestias veniam ex quidem quae fugiat, ducimus repellendus neque aliquam dolore in, pariatur dignissimos nemo autem tempore! Nihil cupiditate possimus a nostrum!</p>
+        <a href="" class="btn">read more</a>
+        <button class="btn"> contact us</button>
+    </div>
+    
+</body>
+</html>

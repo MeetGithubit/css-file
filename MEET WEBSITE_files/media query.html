@@ -1,0 +1,122 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color: rgb(202, 72, 72);
+            color: white;
+            display: none;
+            }
+
+         @media (max-width:300px){
+
+            #box-1{
+                background-color: rgb(72, 202, 111);
+                display: block;
+            }
+         }
+
+         @media (min-width:300px)and (max-width:500px){
+
+            #box-2{
+              background-color: rgb(94, 133, 16);
+              display: block;
+           }    
+         }
+
+
+         @media (min-width:500px) and (max-width:800px){
+
+            #box-3{
+                  background-color:rgb(226, 175, 81);
+                  display: block;
+                  color: yellow;
+                  }    
+         }
+
+         @media (min-width:800px){
+
+             #box-4{
+                 background-color: rgb(124, 41, 219);
+                display: block;
+                 }    
+           }
+    
+        </style>
+</head>
+<body>
+    <div class="box" id="box-1">i am a i phone</div>
+    <div class="box" id="box-2">i am a teblet</div>
+    <div class="box" id="box-3">i am a computer</div>
+    <div class="box" id="box-4">i am a white computer</div>
+</body!-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selector</title>
+    <style>
+        h1{
+            background-color: blanchedalmond;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+
+        }
+       /* if p is conntained by any li which is contained by div*/
+       /* div li p{
+            background-color: green;
+            color: yellow;
+            font-weight: bold;
+        }
+        
+        /* if p in rigth inside div then css will be applied*/
+        /*div > p {
+            color:brown;
+            font-weight: bold;
+            background-color: green;
+        }*/
+
+
+        /* if p is right after div thof div at is p is next sibling */ 
+       div +p {
+            background-color:rgb(166, 255, 0);
+            color:white;
+
+        } 
+
+    </style>
+</head>
+<body>
+    <h1>this is on more selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                     <li class="iteam"><p>this is another paragrph </p></li>
+                     <li>this will get not affected</li>
+                     
+             </ul> 
+            <p>this is a paragraph</p>
+        </div>
+            <p>this is another paragraph</p>
+     </div>
+        <p>this is another one more paragraph</p>
+        
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+

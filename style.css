@@ -1,0 +1,49 @@
+/* css reset 
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+/* css varible 
+
+:root{
+    --navbar-height:59 px;
+}
+
+/* Navigation bar
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation bar: logo and image
+
+#logo {
+       margin:10px 34px;
+
+}
+
+#logo img{
+    height: 59x;
+    margin:4px 6px;
+}*/
+
+p{
+     color:orchid;
+
+     background-color:cyan;
+}
+
+  .bgprimary {
+    color:darkgreen;
+    background-color: chocolate;
+
+}
+
+#bgsecondary{
+    color:blueviolet;
+    background-color: burlywood;
+}
+
+

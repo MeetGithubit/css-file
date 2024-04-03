@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .container{
+            height:544px;
+            width:100%;
+            border:2px solid black;
+            display: flex;   /* (initaialize the container as a flex box)*/
+            
+
+            /* (flex property for flex conntainer*/
+
+           /* flex-direction: row;   (defalut value is flex-direction is row)*/
+           /*flex-direction: column;
+           flex-direction: row-reverse;
+           flex-direction: column-reverse;*/
+
+           flex-wrap:nowrap;      /* (defalut value is flex-wrap is no-wrap)*/
+           /*flex-wrap: wrap-reverse;*/
+
+           /* this is a short hand flex-direction and flex wrap */
+           /*flex-flow: row wrap-reverse;*/
+
+
+            /* justify contenet will justify the content horizonatal direction*/
+            justify-content: center; 
+           /*  justify-content: space-between; */
+           /*justify-content: space-around;  */
+           /*justify-content: space-evenly;  */
+
+
+           /* justify contenet will justify the content vertical direction*/
+           align-items: center; 
+         /*  align-items: flex-end; */
+          /* align-items: flex-start; */
+           /*align-items: stretch;*/
+           /*flex-direction: column;*/
+
+           
+
+        }
+
+       
+        .iteam{
+            
+            width: 200px;
+            height: 200px;
+            background-color: rgb(190, 207, 126);
+            border:2px solid red;
+            padding: 10px;
+            margin: 3px;
+
+        }
+        #iteam-1{
+             /* (flex property for flex itam */
+             /* higher the order later order it shows up in the conntainer*/ 
+                /* order: 2;*/
+
+             /* flew grow mean you can long as you use property*/
+             flex-grow: 2;
+             flex-shrink: 2;
+
+        }
+        #iteam-2{
+
+          /*  flex-grow: 3;
+            flex-shrink: 3;*/
+
+            /* when flex-direction is set to row flex-basis will control width*/
+            /* when flex-direction is set to column flex-basis will control height*/
+            flex-basis: 260px;
+
+        }
+
+        #iteam-3{
+            flex: 2 2 260px;  /*(  2 2 160px it mean flex grow is 2 flex-shrink is 2 flex-basis is 160px) */
+           /* align-self: flex-start;*/
+           /* align-self: flex-end;*/
+           /* align-self: center;*/
+
+
+        }
+
+    </style>
+</head>
+<body>
+   <h3>this is a flex box tutorial</h3>
+   <div class="container">
+    <div class="iteam" id="iteam-1">first box</div>
+    <div class="iteam" id="iteam-2">second box</div>
+    <div class="iteam" id="iteam-3">third box</div>
+   <!-- <div class="iteam" id="iteam-4">four box</div>
+    <div class="iteam" id="iteam-5">five box</div>
+    <div class="iteam" id="iteam-6">six box</div>
+   </div>
+</body>
+</html>

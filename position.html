@@ -1,0 +1,96 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container{
+            border: 2px solid grey;
+            background-color: bisque;
+            height: 1500px;
+        }
+        .box{
+            border: 2px solid red;
+            width:150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+        #box3{
+            /* relative mean tamne position ma gap rakhvo hoy to use it
+            position: relative;
+            top:34px;
+            left: 34px;*/
+
+           /* absolute mean tamne position ma gap  na rakhvo hoy to use it
+           position: relative;
+           top:34px;
+            left: 34px;*/
+
+            /* fixed position mean tame website ma scorll karo and box k button tyanu taj rahe fix rahe */
+               position: fixed;
+               bottom: 2px;
+               right: 2px;
+
+             /* sticky position mean tame website ma scorll karo and box k button tame niche sudhi scorll karso tamne upper chotelu delkse */
+               position: sticky;
+               top: 3px;
+               
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visiablity and z-index</title>
+    <style>
+        .box{
+            height:170px;
+            width:170px;
+            border: 2px solid black;
+        }
+
+
+        #box-1{ 
+
+
+            position: relative;
+            top:49px;
+            z-index: -16;
+             background-color: green;}
+
+        #box-2{ 
+            position: relative;
+            top:14px;
+            z-index: -1;
+            /*display: none;
+
+            visibility: hidden;*/
+            background-color: rgb(12, 49, 12);}
+        #box-3{ background-color: rgb(128, 0, 70);}
+        #box-4{ background-color: rgb(162, 212, 45);}
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+</body>
+</html>
